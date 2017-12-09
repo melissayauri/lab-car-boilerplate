@@ -1,13 +1,17 @@
-/*general*/
-.desktop{
-  display: none;
-}
 *{
   color: white;
 }
+
+/*estilos generales*/
+.desktop{
+  display: none;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
+
+/*estilos para el encabezado*/
 /*boton de barras*/
 .boton-hamburger{
   /*posicionandolo al lado izquierdo*/
@@ -15,9 +19,9 @@
 }
 .principal{
   margin: 0;
-  outline: 1px solid red;
 }
-/*primera seccion*/
+
+/*primera seccion-comienza tu viaje*/
 /*primer fondo*/
 .first-background{
   background-image: url(../assets/images/taxi.jpg);
@@ -25,25 +29,17 @@
   background-position: center bottom;
   background-size: cover;
   height: 120vh;
+  /*aplicando flex para que el bloque comienza tu viaje se posicione al medio*/
   display: flex;
+  /*lo posiciona al centro y al final*/
   align-items: center;
   justify-content: flex-end;
 }
-
-/**/
+/*elimina el espaciado entre la primera sección y el encabezado*/
 .container2{
   padding: 0;
-
 }
-/*contenedor flex*/
-.flex{
-/*display: flex;
-align-items: center;
-justify-content: flex-end;*/
-/* outline: 1px solid red;*/
-
-}
-/*seccion start*/
+/*seccion start-bloque naranja*/
 .start{
   /*outline: 1px solid red;*/
   background-color: #f7b617;
@@ -53,22 +49,17 @@ justify-content: flex-end;*/
   padding-left: 2rem;
   padding-top: 2rem;
 }
-.start-mobile{
-  display: block;
-}
-.labcar-white{
+/*logo blanco en el bloque start*/
+img[alt="logo-blanco"]{
   width: 15%;
   margin-left: 1rem;
-}
-.start-desktop{
-  display: none;
 }
 /*incorporando lineas laterales al texto*/
 .text{
   text-align: center;
   width: 80%;
-  /*outline: 1px solid red;*/
 }
+/*línea lateral despues*/
 .text:after {
   /*no se aplica ningun texto*/
   content: " ";
@@ -83,6 +74,7 @@ justify-content: flex-end;*/
   margin-top: 20px;
   margin-left: 5rem;
 }
+/*línea lateral antes del texto*/
 .text:before {
   /*no se aplica ningun texto*/
   content: " ";
@@ -97,28 +89,25 @@ justify-content: flex-end;*/
   margin-top: 20px;
   margin-right: 5rem;
 }
-/*boton descaragar*/
+/*boton descargar*/
 .btn-white{
-  color: black;
+  color:#48454c;
   border-radius: 10px;
   background-color: #ffffff;
   margin-top: 1rem;
+  padding: 1rem;
+  font-weight: bold;
 }
 
-.btn-orange{
-  color: white;
-  border-radius: 10px;
-  background-color: #f7b617;
-  margin-top: 1rem;
-}
-/*segunda seccion-descargar*/
+
+/*segunda seccion-la nueva app*/
 .section-orange{
   background-color:  #f7b617;
-}
-.second-section{
   color: white;
 }
+/*seccion la nueva app*/
 .new-app{
+  /*borde exterior*/
   border: 1px solid white;
   text-align: center;
   margin-top: 3rem;
@@ -126,13 +115,20 @@ justify-content: flex-end;*/
 }
 
 /*tercera seccion-conduce*/
+/*fondo en la seccion conduce*/
 .second-background{
   background-image: url(../assets/images/conduce.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
   height: 100vh;
-
+}
+/*btn naranaja*/
+.btn-orange{
+  color: white;
+  border-radius: 10px;
+  background-color: #f7b617;
+  margin-top: 1rem;
 }
 
 .third-section{
@@ -150,7 +146,7 @@ justify-content: flex-end;*/
 }
 
 /*cambiando estilos a los inputs del formulario*/
-.form-group input[type="text"]{
+.tarifa .form-group input[type="text"]{
   display: inline-block;
   width: 50%;
   background-color: #f7b617;
@@ -178,7 +174,9 @@ justify-content: flex-end;*/
   padding: 1rem;
   margin-bottom: 5rem;
 }
-
+.line{
+  outline: 1px solid red;
+}
 footer{
   background-color: #2b2b2b;
 
@@ -206,14 +204,13 @@ a{
   line-height: 2.5;
 }
 .footer-icons{
-  display: flex;
-  flex-direction: row;
   margin-bottom: 4rem;
   font-size:1em;
 }
 
 .footer-icons li{
   padding-right: 1rem;
+  display: inline-block;
 }
 
 .footer-img figure{
@@ -223,25 +220,13 @@ a{
 
 
 /*media queries*/
-@media (min-width: 992px) and (max-width: 1200px){
+/*modificaciones */
+@media (min-width: 992px){
   .start{
     height: 80vh;
     width: 41vw;
   }
-.start-desktop{
-  display: block;
 
-}
-.start-mobile{
-  display: none;
-}
-
-.desktop{
-  display: block;
-}
-.mobile{
-  display: none;
-}
 .flex{
   display: flex;
   justify-content: space-around;
@@ -260,22 +245,27 @@ margin-left: -60px;
 .map{
   margin-top: 3rem;
 }
+.btn-ruta{
+  margin-left: 7rem;
+}
+footer .icones{
 
-.icones{
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  height: 100vh;
+outline: 1px solid red;
+  height: 70vh;
 }
 .icones li {
+  position: relative;
+  top:25rem;
+
 display: inline-block;
-margin-right: 1rem;
+outline: 1px solid red;
 
 }
+
+
 .footer-img{
   outline: 1px solid red;
-height: 100vh;
+height: 70vh;
 display: flex;
 flex-direction: column;
 
@@ -285,36 +275,52 @@ flex-direction: column;
 
 }
 
+
+@media (min-width:1200px){
+  .start{
+    outline: 1px solid red;
+    width: 41vw;
+  }
+  .text{
+  width: 65%;
+  }
+  .map{
+    width: 80%;
+  }
+
+}
+
+
+
 /*ejecucion de modales*/
+/*modal iniciar sesion*/
+/*contenedor de la seccion iniciar sesion*/
 .content-sesion{
+  /*aplicando color y eliminando bordes circulares*/
   background-color: #08ac9d;
   border-radius: 0;
 }
+/*seccion iniciar sesión*/
 .start-sesion{
+  /*color*/
   background-color: #f5f5f5;
+  /*ancho*/
   width: 50%;
+  /*borde y espaciado*/
   border-radius: 1rem;
   padding: 2rem;
-
 }
+/*entradas username y password*/
 .input-sesion{
-  /*outline: 1px solid red;*/
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 3px;
-
 }
+/*eliminado bordes de los iconos*/
 .start-sesion .form-group span{
   border: none;
 }
-.start-sesion .input-group .input-text{
-  background: none;
-  margin-left: 0rem;
-  border: none;
-  padding: 0px;
-  padding-left: 1rem;
-  border-left: 1px solid #ccc;
-}
+/*espaciado y color al texto olvidar contraseña*/
 .text-forgot{
   color:black;
   padding-top:  2rem;
@@ -324,61 +330,64 @@ margin-bottom: 1rem;
 }
 
 /*modal registrate*/
+/*contenedor de la seccion registrate*/
 .content-register{
   background-color: #a9a9a9;
+  /*ancho y espaciado a la izquierda*/
   width: 80%;
-margin-left:8%;
+  margin-left:8%;
 }
+/*cada entrada tiene un espaciado inferior*/
 .content-register input{
   margin-bottom: 1rem;
 }
+/*botón ya tienes una cuenta*/
 .btn-black{
   background-color: black;
   margin-bottom: 1rem;
 }
+/*boton cuenta nueva*/
 .new-account{
   text-align: center;
   margin-bottom: 1rem;
-
 }
+/*entradas del formulario en linea, nombre y apellido*/
 .content-register .form-inline input{
-  width: 22.3vw;
-
+  /*espaciado entre ellos*/
+  padding-right: 3.5rem;
 }
+/*boton con el icono "v"*/
 .btn-us{
   color:black;
-/*outline: 1px solid red;*/
-text-align: center;
-width: 45vw;
-margin-bottom: 1rem;
+  text-align: center;
+  padding-right: 13rem;
+  margin-bottom: 1rem;
+  padding-left: 10rem;
 }
-
 .btn-us span{
-    color:black;
-    /*padding-right: 11rem;*/
-}
-
-
-/*modal convertir en conducto*/
-.form-conduce label{
-display: block;
-  color: black;
-
-}
-.input-conduce{
-margin-bottom: 2rem;
-
-}
-.input-conduce button{
-width:45vw;
-text-align: left;
-}
-.input-conduce span{
   color:black;
 }
-.input-conduce p{
+
+
+/*modal convertir en conductor*/
+/*etiquetas para las opciones*/
+.second-background .content-register .modal-body .form-group label{
+  display: block;
+  color: black;
+  margin-top: 2rem;
+}
+/*estilos para las opciones de la etiqueta*/
+.second-background .content-register .modal-body .form-group .dropdown-toggle{
+  width:37vw;
+  text-align: left;
+}
+.content-register form p:nth-last-child{
+  color:black;
+}
+/*estilo para el parrafo en la etiqueta marca*/
+.content-register form p{
   color:gray;
 }
-.input-conduce a{
+.content-register form p a{
   color: #6797a9;
 }

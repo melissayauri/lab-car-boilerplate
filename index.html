@@ -28,7 +28,7 @@
               <img alt="Brand" src="assets/images/logoForma.png">
             </a>
           </div>
-          <!--Menu despegable-->
+          <!--Menu despegable para desktop y mobile-->
           <div class="collapse navbar-collapse" id="navbar-1">
             <!--se posciona al lado derecho en desktop-->
             <ul class="nav navbar-nav navbar-right">
@@ -50,21 +50,27 @@
                     <img src="assets/images/person.JPG" alt="person" class="img-responsive center-block">
                   </figure>
                 </div>
+                <!--cuerpo-->
                 <div class="modal-body">
                   <!--cuadro de iniciar sesion-->
                   <form class="start-sesion center-block">
                     <div class="form-group ">
-                      <!--entrada username-->
+                      <!--sección username-->
                       <div class="input-group input-sesion">
+                        <!--icono user-->
                         <span class="input-group-addon glyphicon glyphicon-user"></span>
-                        <input type="text" class="form-control input-text"  placeholder="Username">
+                        <!--entrada username-->
+                        <input type="" class="form-control"  placeholder="Username">
                       </div>
-                      <!--entrada password-->
+                      <!--sección password-->
                       <div class="input-group  input-sesion">
+                        <!--icono candado-->
                         <span class="input-group-addon glyphicon glyphicon-lock"></span>
-                        <input type="password" class="form-control input-text"  placeholder="Password">
+                        <!--entrada de la contraseña-->
+                        <input type="password" class="form-control"  placeholder="Password">
                       </div>
                     </div>
+                    <!--boton login-->
                     <button class="btn btn-default center-block btn-warning " type="submit">Login</button>
                     <div class="text-forgot">Forgot password?<a href="#" class="">Click here</a></div>
                   </form>
@@ -75,59 +81,75 @@
         </div>
       </nav>
     </header>
-    <!--primera sección-->
+
+    <!--primera sección-Comienza a viajar-->
     <section class="first-background">
       <div class="container-fluid container2">
         <div class="row">
-          <div class="col-xs-offset-2 col-xs-10  col-md-4 col-md-offset-8">
+          <div class="col-xs-offset-2 col-xs-10  col-md-4 col-md-offset-8 col-lg-4 col-lg-offset-8 ">
             <!--seccion comienza tu viaje-->
             <div class="start">
-              <div class="start-mobile">
-              <p>Comienza a viajar</p>
-              <p>con <img class="labcar-white"src="assets/images/logoBlanco.png" alt=""></p>
-              <button type="button" name="button" class="btn btn-default btn-white"> Descarga el app</button>
-                </div>
-              <div class="start-desktop">
+              <!--sección para mobile-->
+              <!--titulo -->
+              <div class="visible-xs">
+                <h1>Comienza a viajar <br> con <img src="assets/images/logoBlanco.png" alt="logo-blanco"></h1>
+                <!--boton descargar -->
+                <button type="button" name="button" class="btn btn-default btn-white"> Descarga el app</button>
+              </div>
+              <!--seccion visible en desktop-->
+              <div class="visible-md visible-lg">
+                <!--titulos-->
                 <h3>Disfruta del viaje <br> Eres dueño de tu tiempo</h3>
+                <!--logo blanco-->
                 <h3>Viaja con <img class="labcar-white"src="assets/images/logoBlanco.png" alt=""></h3>
-                <button type="button" name="button" class="btn btn-default" href="#registrate" data-toggle="modal"> Registrate</button>
+                <!--botón registrate-->
+                <button type="button" name="button" class="btn btn-default text-uppercase   btn-white" href="#registrate" data-toggle="modal"> Registrate</button>
                 <!--modal registrate-->
                 <div class="modal fade" id ="registrate">
                   <div class="modal-dialog">
-                    <!--contenedor de -->
+                    <!--contenedor del registro -->
                     <div class="modal-content content-register">
-                      <!--encabezado-->
+                      <!--cuerpo-->
                       <div class="modal-body">
+                        <!--botón cerrar-->
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <!--botón negro-tienes cuenta-->
                         <button type="button" name="button"class="btn btn-block btn-black">Ya tienes una cuenta?</button>
+                        <!--boton crear nueva cuenta-->
                         <div class=" new-account">
-
-
-                        <a href="#" class="text-uppercase new-account">o crea una cuenta nueva</a>
-                            </div>
+                          <a href="#" class="text-uppercase new-account">o crea una cuenta nueva</a>
+                        </div>
+                        <!--sección de formulario-->
                         <!--formulario en linea-->
                         <form class="form-inline">
+                          <!--entrada nombre-->
                           <div class="form-group ">
-                             <input type="" class="form-control "  placeholder="nombre">
+                            <input type="" class="form-control "  placeholder="nombre">
                           </div>
-                          <div class="form-group ">
-                             <input type="" class="form-control "  placeholder="apellido">
+                          <!--entrada apellido-->
+                          <div class="form-group">
+                            <input type="" class="form-control "  placeholder="apellido">
                           </div>
                         </form>
                         <!--formulario vertical-->
                         <form>
+                          <!--entrada del correo-->
                           <div class="form-group">
                             <input type="email" class="form-control "  placeholder="Correo Electrónico: ejemplo@correo.mx">
                           </div>
+                          <!--entrada telefóno-->
                           <div class="form-group">
-                            <input type="" class="form-control "  placeholder="teléfono">
+                            <input type="" class="form-control"  placeholder="teléfono">
                           </div>
+                          <!--entrada contraseña-->
                           <div class="form-group">
-                            <input type="" class="form-control "  placeholder="contraseña">
+                            <input type="" class="form-control"  placeholder="contraseña">
                           </div>
+                          <!--entrada ciudad-->
                           <div class="form-group">
-                            <input type="" class="form-control "  placeholder="Ciudad">
+                            <input type="" class="form-control"  placeholder="Ciudad">
                           </div>
+                          <!--entrada codigo de invitación-->
                           <div class="form-group">
                             <input type="" class="form-control "  placeholder="(Opcional) Código de invitación">
                           </div>
@@ -142,133 +164,153 @@
                               <li><a href="#">TV</a></li>
                             </ul>
                           </div>
+                          <!--botón enviar-->
                           <button type="button" class="btn btn-info text-uppercase btn-block">Enviar</button>
                         </form>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!--termino del modal-->
+                <!--texto con líneas laterales-->
                 <p class="text">o bien</p>
-                <button type="button" name="button" class="btn btn-default">Conviertete en un conductor</button>
+                <!--botón convierte en un conductor-->
+                <button type="button" name="button" class="btn btn-default  btn-white">Conviertete en un conductor</button>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-    <!--segunda sección-->
-    <section class="section-orange">
-      <div class="container container-second">
-        <div class="row">
-          <div class="col-xs-12 col-md-10">
-            <!--segunda sección-->
-            <div class="second-section">
-              <!--seccion nueva app-->
-              <div class="new-app flex">
-                <h4 class="mobile">La nueva app</h4>
-                <figure class="phone">
-                  <img src="assets/images/iPhone6Plus.png" alt="">
-                </figure>
-                <div class="downloand desktop">
-                  <h1>Descarga la nueva app</h1>
-                  <p>La version actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido</p>
-                  <p>Con solo tocar un boton, un auto llega justo a tu ubicacion.Subete y no te preocupes: tu conductor sabe a donde ir exactamente</p>
+      <!--segunda sección-la nueva app-->
+      <section class="section-orange">
+        <div class="container container-second">
+          <div class="row">
+            <div class="col-xs-12 col-md-10 col-lg-10">
+              <!--segunda sección-->
+              <div class="second-section">
+                <!--seccion nueva app-->
+                <div class="new-app flex">
+                  <!--titúlo-->
+                  <h4 class="visible-xs">La nueva app</h4>
+                  <!--imagen telefono-->
+                  <figure class="phone">
+                    <img src="assets/images/iPhone6Plus.png" alt="phone">
+                  </figure>
+                  <!--bloque que se muestra en desktop-->
+                  <!--texto descargar nueva app-->
+                  <div class="downloand visible-md visible-lg">
+                    <h1>Descarga la nueva app</h1>
+                    <p>La version actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido</p>
+                    <p>Con solo tocar un boton, un auto llega justo a tu ubicacion.Subete y no te preocupes: tu conductor sabe a donde ir exactamente</p>
+                  </div>
                 </div>
+                <!--texto que se muestra en mobile-->
+                <p class="visible-xs">Llega a tu destino aún más rápido</p>
               </div>
-              <p class="visible-xs">Llega a tu destino aún más rápido</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--tercera sección-->
-    <section class="second-background">
-      <div class="container-fluid container2">
-        <div class="row">
-          <div class="col-xs-12 col-md-6 col-md-offset-6">
-            <div class="third-section">
-              <h1>Conduce cuando quieras</h1>
-              <p>Lab car es una opcion flexible para alcanzar tus metas financieras</p>
-              <button type="button" name="button" class="btn btn-orange" href="#convierte-conductor" data-toggle="modal">Conviertete en un conductor</button>
-            </div>
-            <!--modal conviertete en un conductor -->
-            <div class="modal fade" id ="convierte-conductor">
-              <div class="modal-dialog">
-                <div class="modal-content content-register">
-                  <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <form>
-                      <div class="form-group form-conduce">
-                        <label >¿Tienes vehículo de 4 puertas?</label>
-                        <div class="btn-group input-conduce">
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">si<span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Si</a></li>
-                            <li><a href="#">No</a></li>
-                          </ul>
-                        </div>
-                        <!-- -->
-                        <label >Marca</label>
-                        <div class="btn-group input-conduce">
-                          <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Elige la marca del vehículo<span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Hyundai</a></li>
-                            <li><a href="#">Lamborghini</a></li>
-                            <li><a href="#">Ferrari</a></li>
-                          </ul>
-                            <p>¿No ves tu correo en la lista?Envia un correo electronico a <a>sociosmdv@uver.com</a></p>
-                        </div>
+      </section>
 
-                        <label >Modelo</label>
-                        <div class="btn-group input-conduce">
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modelo1<span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Modelo1</a></li>
-                            <li><a href="#">Modelo2</a></li>
-                            <li><a href="#">Modelo3</a></li>
-                          </ul>
-                        </div>
-                        <label >Año</label>
-                        <div class="btn-group input-conduce">
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2017<span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">2017</a></li>
-                            <li><a href="#">2016</a></li>
-                            <li><a href="#">2015</a></li>
-                          </ul>
-                        </div>
-
-                        <label >Número de la matrícula</label>
-                        <div class="btn-group input-conduce">
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Número de la matrícula<span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">2017</a></li>
-                            <li><a href="#">2016</a></li>
-                            <li><a href="#">2015</a></li>
-                          </ul>
-                          <span>La información de la matrícula ayuda a los clientes a identificar tu vehículo</span>
-                        </div>
-                        <button type="button" class="btn btn-info btn-block">Enviar</button>
-                        </div>
-
-                        <!-- -->
-
-                      </form>
-
+      <!--tercera sección-conduce-->
+      <section class="second-background">
+        <div class="container-fluid container2">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-6">
+              <!--contenedor del texto-->
+              <div class="third-section">
+                <h1>Conduce cuando quieras</h1>
+                <p>Lab car es una opcion flexible para alcanzar tus metas financieras</p>
+                <!--botón conviertete en conductor-->
+                <button type="button" name="button" class="btn btn-orange" href="#convierte-conductor" data-toggle="modal">Conviertete en un conductor</button>
+              </div>
+              <!--modal conviertete en un conductor -->
+              <div class="modal fade" id ="convierte-conductor">
+                <div class="modal-dialog">
+                  <!--contenedor del registro para convertirse en conductor-->
+                  <div class="modal-content content-register">
+                    <!--cuerpo-->
+                    <div class="modal-body">
+                      <!--botón cerrar-->
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <form>
+                        <div class="form-group">
+                          <!--etiqueta puertas-->
+                          <label >¿Tienes vehículo de 4 puertas?</label>
+                          <!--botón de opción-->
+                          <div class="btn-group ">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">si<span class="caret"></span>
+                            </button>
+                            <!--menú despegable de la etiqueta puerta-->
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Si</a></li>
+                              <li><a href="#">No</a></li>
+                            </ul>
+                          </div>
+                          <!--etiqueta marca -->
+                          <label >Marca</label>
+                          <div class="btn-group">
+                            <!--botón de opción-->
+                            <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Elige la marca del vehículo<span class="caret"></span>
+                            </button>
+                            <!--menú despegable de la etiqueta marca-->
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Hyundai</a></li>
+                              <li><a href="#">Lamborghini</a></li>
+                              <li><a href="#">Ferrari</a></li>
+                            </ul>
+                          </div>
+                          <!--texto adicional-->
+                          <p>¿No ves tu correo en la lista?Envia un correo electronico a <a>sociosmdv@uver.com</a></p>
+                          <!--etiqueta modelo-->
+                          <label >Modelo</label>
+                          <div class="btn-group">
+                            <!--botón de opción-->
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modelo1<span class="caret"></span>
+                            </button>
+                            <!--menú despegable de la etiqueta modelo-->
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Modelo1</a></li>
+                              <li><a href="#">Modelo2</a></li>
+                              <li><a href="#">Modelo3</a></li>
+                            </ul>
+                          </div>
+                          <!--etiqueta año-->
+                          <label >Año</label>
+                          <div class="btn-group">
+                            <!--botón de opción-->
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2017<span class="caret"></span>
+                            </button>
+                            <!--menú despegable de la etiqueta año-->
+                            <ul class="dropdown-menu">
+                              <li><a href="#">2017</a></li>
+                              <li><a href="#">2016</a></li>
+                              <li><a href="#">2015</a></li>
+                            </ul>
+                          </div>
+                          <!--etiqueta numero de matrícula-->
+                          <label >Número de la matrícula</label>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Número de la matrícula<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">2017</a></li>
+                              <li><a href="#">2016</a></li>
+                              <li><a href="#">2015</a></li>
+                            </ul>
+                          </div>
+                        <!--texto adicional-->
+                        <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                        <!--boton enviar-->
+                        <button type="button" class="btn btn-info ">Enviar</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-<!--termino del modal conviertete en un conductor -->
-
-
-
+            <!--termino del modal conviertete en un conductor -->
           </div>
         </div>
       </div>
@@ -277,7 +319,7 @@
     <section class="section-orange">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-md-offset-1">
+          <div class="col-xs-12 col-md-6 col-md-offset-1 col-lg-7 col-lg-offset-1">
             <!--sección tarifa-->
 
             <div class="tarifa">
@@ -293,15 +335,15 @@
                   <label for="dd" class="glyphicon glyphicon-send icon"></label>
                   <input type="text" class="form-control"  placeholder="Insurgentes,">
                 </div>
-                <button type="button" name="button" class="btn btn-default btn-lg center-block btn-white">¡Trazar ruta!</button>
+                <button type="button" name="button" class="btn btn-default btn-lg center-block btn-white btn-ruta">¡Trazar ruta!</button>
               </form>
             </div>
           </div>
 
-          <div class="col-xs-12 col-md-4 col-md-offset-">
+          <div class="col-xs-12 col-md-4 col-lg-4">
             <figure class="map line">
-              <img src="assets/images/mapa.JPG" alt="google-map" class="desktop">
-              <img src="assets/images/google-map.JPG" alt="google-map" class="mobile">
+              <img src="assets/images/mapa.JPG" alt="google-map" class="visible-md visible-lg">
+              <img src="assets/images/google-map.JPG" alt="google-map" class="visible-xs">
             </figure>
           </div>
         </div>
@@ -319,8 +361,8 @@
 
 
         <div class="row ">
-          <div class="col-md-3 " >
-            <ul class=" icones desktop">
+          <div class="col-md-3 mjj" >
+            <ul class=" icones visible-md visible-lg line">
                 <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
                 <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
                 <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
@@ -334,7 +376,7 @@
 
 
           <div class="col-xs-6 col-md-3 ">
-            <ul class="list1">
+            <ul class="list1 line">
                 <li><a href="#">Viaja</a></li>
                 <li><a href="#">Conduce</a></li>
                 <li><a href="#">Ciudades</a></li>
@@ -347,7 +389,7 @@
             </div>
 
             <div class="col-md-3 ">
-              <ul class="list1 desktop">
+              <ul class="list1 visible-md visible-lg">
                   <li><a href="#">Oportunidades</a></li>
                   <li><a href="#">Nuestra historia</a></li>
                   <li><a href="#">API de Labcar</a></li>
@@ -359,7 +401,7 @@
                 </ul>
               </div>
             <div class="col-xs-6 col-md-3" >
-              <ul class="footer-icons mobile">
+              <ul class="footer-icons visible-xs">
                   <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
                   <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
                   <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>

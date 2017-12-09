@@ -5,6 +5,9 @@
 *{
   color: white;
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
 /*boton de barras*/
 .boton-hamburger{
   /*posicionandolo al lado izquierdo*/
@@ -63,6 +66,7 @@ justify-content: flex-end;*/
 /*incorporando lineas laterales al texto*/
 .text{
   text-align: center;
+  width: 80%;
   /*outline: 1px solid red;*/
 }
 .text:after {
@@ -71,7 +75,7 @@ justify-content: flex-end;*/
   /*se posiciona al lado de la estrella*/
   display: inline-block;
   /*tamaño de la linea*/
-  width: 100px;
+  width: 80px;
   height: 1px;
   /*color de fondo*/
   background: white;
@@ -85,7 +89,7 @@ justify-content: flex-end;*/
   /*se posiciona al lado de la estrella*/
   display: inline-block;
   /*tamaño de la linea*/
-  width: 100px;
+  width: 80px;
   height: 1px;
   /*color de fondo*/
   background: white;
@@ -94,13 +98,19 @@ justify-content: flex-end;*/
   margin-right: 5rem;
 }
 /*boton descaragar*/
-.btn-download{
+.btn-white{
   color: black;
   border-radius: 10px;
   background-color: #ffffff;
   margin-top: 1rem;
 }
 
+.btn-orange{
+  color: white;
+  border-radius: 10px;
+  background-color: #f7b617;
+  margin-top: 1rem;
+}
 /*segunda seccion-descargar*/
 .section-orange{
   background-color:  #f7b617;
@@ -215,8 +225,8 @@ a{
 /*media queries*/
 @media (min-width: 992px) and (max-width: 1200px){
   .start{
-    width: 32vw;
-    height: 60vh;
+    height: 80vh;
+    width: 41vw;
   }
 .start-desktop{
   display: block;
@@ -311,4 +321,39 @@ margin-bottom: 1rem;
 }
 .text-forgot a{
   color: red;
+}
+
+/*modal registrate*/
+.content-register{
+  background-color: #a9a9a9;
+  width: 80%;
+margin-left:8%;
+}
+.content-register input{
+  margin-bottom: 1rem;
+}
+.btn-black{
+  background-color: black;
+  margin-bottom: 1rem;
+}
+.new-account{
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+.content-register .form-inline input{
+  width: 22.3vw;
+
+}
+.btn-us{
+  color:black;
+/*outline: 1px solid red;*/
+text-align: center;
+width: 45vw;
+margin-bottom: 1rem;
+}
+
+.btn-us span{
+    color:black;
+    /*padding-right: 11rem;*/
 }

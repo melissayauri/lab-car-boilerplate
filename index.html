@@ -54,13 +54,15 @@
                   <!--cuadro de iniciar sesion-->
                   <form class="start-sesion center-block">
                     <div class="form-group ">
+                      <!--entrada username-->
                       <div class="input-group input-sesion">
                         <span class="input-group-addon glyphicon glyphicon-user"></span>
                         <input type="text" class="form-control input-text"  placeholder="Username">
                       </div>
+                      <!--entrada password-->
                       <div class="input-group  input-sesion">
                         <span class="input-group-addon glyphicon glyphicon-lock"></span>
-                        <input type="text" class="form-control input-text"  placeholder="Username">
+                        <input type="password" class="form-control input-text"  placeholder="Password">
                       </div>
                     </div>
                     <button class="btn btn-default center-block btn-warning " type="submit">Login</button>
@@ -75,7 +77,7 @@
     </header>
     <!--primera sección-->
     <section class="first-background">
-      <div class="container container2">
+      <div class="container-fluid container2">
         <div class="row">
           <div class="col-xs-offset-2 col-xs-10  col-md-4 col-md-offset-8">
             <!--seccion comienza tu viaje-->
@@ -83,20 +85,76 @@
               <div class="start-mobile">
               <p>Comienza a viajar</p>
               <p>con <img class="labcar-white"src="assets/images/logoBlanco.png" alt=""></p>
-              <button type="button" name="button" class="btn-download"> Descarga el app</button>
+              <button type="button" name="button" class="btn btn-default btn-white"> Descarga el app</button>
                 </div>
               <div class="start-desktop">
                 <h3>Disfruta del viaje <br> Eres dueño de tu tiempo</h3>
                 <h3>Viaja con <img class="labcar-white"src="assets/images/logoBlanco.png" alt=""></h3>
-                <button type="button" name="button" class="btn-download"> Registrate</button>
-                <p class="text">o bien</p>
-                <button type="button" name="button" class="btn-download">Conviertete en un conductor</button>
+                <button type="button" name="button" class="btn btn-default" href="#registrate" data-toggle="modal"> Registrate</button>
+                <!--modal registrate-->
+                <div class="modal fade" id ="registrate">
+                  <div class="modal-dialog">
+                    <!--contenedor de -->
+                    <div class="modal-content content-register">
+                      <!--encabezado-->
+                      <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" name="button"class="btn btn-block btn-black">Ya tienes una cuenta?</button>
+                        <div class=" new-account">
 
+
+                        <a href="#" class="text-uppercase new-account">o crea una cuenta nueva</a>
+                            </div>
+                        <!--formulario en linea-->
+                        <form class="form-inline">
+                          <div class="form-group ">
+                             <input type="" class="form-control "  placeholder="nombre">
+                          </div>
+                          <div class="form-group ">
+                             <input type="" class="form-control "  placeholder="apellido">
+                          </div>
+                        </form>
+                        <!--formulario vertical-->
+                        <form>
+                          <div class="form-group">
+                            <input type="email" class="form-control "  placeholder="Correo Electrónico: ejemplo@correo.mx">
+                          </div>
+                          <div class="form-group">
+                            <input type="" class="form-control "  placeholder="teléfono">
+                          </div>
+                          <div class="form-group">
+                            <input type="" class="form-control "  placeholder="contraseña">
+                          </div>
+                          <div class="form-group">
+                            <input type="" class="form-control "  placeholder="Ciudad">
+                          </div>
+                          <div class="form-group">
+                            <input type="" class="form-control "  placeholder="(Opcional) Código de invitación">
+                          </div>
+                          <!--botón como te enteraste de nosotros despegable-->
+                          <div class="btn-group ">
+                            <button type="button" class="btn  dropdown-toggle btn-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Como te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <!--menú despegable del botón-->
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Facebook</a></li>
+                              <li><a href="#">Radio</a></li>
+                              <li><a href="#">TV</a></li>
+                            </ul>
+                          </div>
+                          <button type="button" class="btn btn-info text-uppercase btn-block">Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">o bien</p>
+                <button type="button" name="button" class="btn btn-default">Conviertete en un conductor</button>
               </div>
             </div>
-
           </div>
         </div>
+
       </div>
     </section>
     <!--segunda sección-->
@@ -132,8 +190,13 @@
             <div class="third-section">
               <h1>Conduce cuando quieras</h1>
               <p>Lab car es una opcion flexible para alcanzar tus metas financieras</p>
-              <button type="button" name="button">Conviertete en un conductor</button>
+              <button type="button" name="button" class="btn btn-orange" href="#convierte-conductor" data-toggle="modal">Conviertete en un conductor</button>
             </div>
+            <div class="modal fade" id ="convierte-conductor">
+              <div class="modal-dialog">
+                <!--contenedor de -->
+                <div class="modal-content content-register">
+
           </div>
         </div>
       </div>
@@ -158,7 +221,7 @@
                   <label for="dd" class="glyphicon glyphicon-send icon"></label>
                   <input type="text" class="form-control"  placeholder="Insurgentes,">
                 </div>
-                <button type="button" name="button">Trazar ruta</button>
+                <button type="button" name="button" class="btn btn-default btn-lg center-block btn-white">¡Trazar ruta!</button>
               </form>
             </div>
           </div>

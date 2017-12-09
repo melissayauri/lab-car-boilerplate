@@ -357,3 +357,28 @@ margin-bottom: 1rem;
     color:black;
     /*padding-right: 11rem;*/
 }
+
+
+/*modal convertir en conducto*/
+.form-conduce label{
+display: block;
+  color: black;
+
+}
+.input-conduce{
+margin-bottom: 2rem;
+
+}
+.input-conduce button{
+width:45vw;
+text-align: left;
+}
+.input-conduce span{
+  color:black;
+}
+.input-conduce p{
+  color:gray;
+}
+.input-conduce a{
+  color: #6797a9;
+}

@@ -3,3 +3,40 @@
   /*posicionandolo al lado izquierdo*/
   float: left;
 }
+/*primer fondo*/
+.first-background{
+  background-image: url(../assets/images/taxi.jpg);
+  background-repeat: no-repeat;
+  background-position: center 91%;
+  background-size: 100% auto;
+  height: 120vh;
+}
+/**/
+.container2{
+  padding: 0;
+}
+/*contenedor flex*/
+.flex{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+/* outline: 1px solid red;*/
+  height: 350px;
+}
+/*seccion start*/
+.start{
+  /*outline: 1px solid red;*/
+  background-color: #f7b617;
+  color: white;
+  font-size: 25px;
+  padding: 30px;
+  height: 50vh;
+}
+
+/*boton descaragar*/
+.btn-download{
+  color: black;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 1rem;
+}

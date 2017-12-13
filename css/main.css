@@ -3,6 +3,7 @@
   /*posicionandolo al lado izquierdo*/
   float: left;
 }
+/*primera seccion*/
 /*primer fondo*/
 .first-background{
   background-image: url(../assets/images/taxi.jpg);
@@ -39,4 +40,18 @@
   border-radius: 10px;
   background-color: #ffffff;
   margin-top: 1rem;
+}
+
+/*segunda seccion*/
+.section-orange{
+  background-color:  #f7b617;
+}
+.second-section{
+  color: white;
+}
+.new-app{
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }

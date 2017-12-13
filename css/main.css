@@ -1,1 +1,5 @@
-/* Los estilos de tu proyecto */
+/*boton de barras*/
+.boton-hamburger{
+  /*posicionandolo al lado izquierdo*/
+  float: left;
+}

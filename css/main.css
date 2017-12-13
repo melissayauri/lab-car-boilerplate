@@ -55,3 +55,13 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+/*tercera seccion*/
+.second-background{
+  background-image: url(../assets/images/conduce.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: left 20%;
+  height: 100vh;
+
+}

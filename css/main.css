@@ -43,8 +43,8 @@ justify-content: flex-end;*/
   /*outline: 1px solid red;*/
   background-color: #f7b617;
   color: white;
-  height: 35vh;
-  width: 80vw;
+  height: 60vh;
+  width: 74vw;
   padding-left: 2rem;
   padding-top: 2rem;
 }
@@ -131,7 +131,14 @@ justify-content: flex-end;*/
   color: white;
 }
 
-
+.tarifa{
+  outline: 1px solid red;
+  padding-left: 20px;
+}
+.form-group input[type="text"]{
+  display: inline-block;
+  width: 50%;
+}
 /*media queries*/
 @media (min-width: 992px) and (max-width: 1200px){
   .start{

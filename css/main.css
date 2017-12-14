@@ -1,3 +1,8 @@
+/*general*/
+.desktop{
+  display: none;
+}
+
 /*boton de barras*/
 .boton-hamburger{
   /*posicionandolo al lado izquierdo*/
@@ -23,6 +28,7 @@
 /**/
 .container2{
   padding: 0;
+
 }
 /*contenedor flex*/
 .flex{
@@ -38,7 +44,7 @@ justify-content: flex-end;*/
   background-color: #f7b617;
   color: white;
   height: 35vh;
-  width: 80vw;
+  width: 60vw;
   padding-left: 2rem;
   padding-top: 2rem;
 }
@@ -120,10 +126,11 @@ justify-content: flex-end;*/
 
 
 /*media queries*/
-@media (min-width: 992px){
+@media (min-width: 992px) and (max-width: 1200px){
   .start{
-    width: 35vw;
+    width: 32vw;
     height: 60vh;
+
   }
 .start-desktop{
   display: block;
@@ -131,5 +138,31 @@ justify-content: flex-end;*/
 }
 .start-mobile{
   display: none;
+}
+.container-second{
+  width: 100%;
+}
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+.downloand{
+text-align: justify;
+width: 40%;
+
+
+
+}
+.phone{
+  width: 40%;
+}
+.new-app{
+overflow: auto;
 }
 }

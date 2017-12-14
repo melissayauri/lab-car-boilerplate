@@ -3,37 +3,88 @@
   /*posicionandolo al lado izquierdo*/
   float: left;
 }
+.principal{
+  margin: 0;
+  outline: 1px solid red;
+}
 /*primera seccion*/
 /*primer fondo*/
 .first-background{
   background-image: url(../assets/images/taxi.jpg);
   background-repeat: no-repeat;
-  background-position: center 91%;
-  background-size: 100% auto;
+  background-position: center bottom;
+  background-size: cover;
   height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
+
 /**/
 .container2{
   padding: 0;
 }
 /*contenedor flex*/
 .flex{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+/*display: flex;
+align-items: center;
+justify-content: flex-end;*/
 /* outline: 1px solid red;*/
-  height: 350px;
+
 }
 /*seccion start*/
 .start{
   /*outline: 1px solid red;*/
   background-color: #f7b617;
   color: white;
-  font-size: 25px;
-  padding: 30px;
-  height: 50vh;
+  height: 35vh;
+  width: 80vw;
+  padding-left: 2rem;
+  padding-top: 2rem;
 }
-
+.start-mobile{
+  display: block;
+}
+.labcar-white{
+  width: 15%;
+  margin-left: 1rem;
+}
+.start-desktop{
+  display: none;
+}
+/*incorporando lineas laterales al texto*/
+.text{
+  text-align: center;
+  /*outline: 1px solid red;*/
+}
+.text:after {
+  /*no se aplica ningun texto*/
+  content: " ";
+  /*se posiciona al lado de la estrella*/
+  display: inline-block;
+  /*tamaño de la linea*/
+  width: 100px;
+  height: 1px;
+  /*color de fondo*/
+  background: white;
+  /*posicionamiento al medio de la estrella*/
+  margin-top: 20px;
+  margin-left: 5rem;
+}
+.text:before {
+  /*no se aplica ningun texto*/
+  content: " ";
+  /*se posiciona al lado de la estrella*/
+  display: inline-block;
+  /*tamaño de la linea*/
+  width: 100px;
+  height: 1px;
+  /*color de fondo*/
+  background: white;
+  /*posicionamiento al medio de la estrella*/
+  margin-top: 20px;
+  margin-right: 5rem;
+}
 /*boton descaragar*/
 .btn-download{
   color: black;
@@ -60,8 +111,25 @@
 .second-background{
   background-image: url(../assets/images/conduce.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left 20%;
+  background-size:cover;
+  background-position: center;
   height: 100vh;
 
+}
+
+
+
+/*media queries*/
+@media (min-width: 992px){
+  .start{
+    width: 35vw;
+    height: 60vh;
+  }
+.start-desktop{
+  display: block;
+
+}
+.start-mobile{
+  display: none;
+}
 }

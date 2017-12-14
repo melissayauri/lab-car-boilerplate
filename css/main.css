@@ -44,7 +44,7 @@ justify-content: flex-end;*/
   background-color: #f7b617;
   color: white;
   height: 35vh;
-  width: 60vw;
+  width: 80vw;
   padding-left: 2rem;
   padding-top: 2rem;
 }
@@ -123,6 +123,13 @@ justify-content: flex-end;*/
 
 }
 
+.third-section{
+  background-color:rgba(52, 52, 52, 0.45);
+  height: 100vh;
+  padding-left: 3rem;
+  padding-top: 10rem;
+  color: white;
+}
 
 
 /*media queries*/

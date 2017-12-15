@@ -2,9 +2,7 @@
 .desktop{
   display: none;
 }
-*{
-  color: white;
-}
+
 /*boton de barras*/
 .boton-hamburger{
   /*posicionandolo al lado izquierdo*/
@@ -101,7 +99,7 @@ justify-content: flex-end;*/
   margin-top: 1rem;
 }
 
-/*segunda seccion-descargar*/
+/*segunda seccion*/
 .section-orange{
   background-color:  #f7b617;
 }
@@ -115,7 +113,7 @@ justify-content: flex-end;*/
   margin-bottom: 3rem;
 }
 
-/*tercera seccion-conduce*/
+/*tercera seccion*/
 .second-background{
   background-image: url(../assets/images/conduce.jpg);
   background-repeat: no-repeat;
@@ -131,51 +129,22 @@ justify-content: flex-end;*/
   padding-left: 3rem;
   padding-top: 10rem;
   color: white;
-  text-align: left;
-}
-/*cuarta seccion-tarifa*/
-.tarifa{
-  /*outline: 1px solid red;*/
-  padding-top: 2rem;
 }
 
-/*cambiando estilos a los inputs del formulario*/
+.tarifa{
+  outline: 1px solid red;
+  padding-left: 20px;
+}
 .form-group input[type="text"]{
   display: inline-block;
   width: 50%;
-  background-color: #f7b617;
-  color: #fff;
-  border: 2px solid white;
-  border-radius: 5px;
-  margin-left: 1rem;
-}
-/*cambiando el color gris del placeholder*/
-.form-group input::-webkit-input-placeholder{
-  color: white;
-}
-/*modificando el sentido del segundo icono*/
-.icon{
-  transform:rotate(70deg);
-}
-
-.line{
-  /*outline: 1px solid red;*/
-}
-.map{
-  margin-top: 5rem;
-  border: 1px solid white;
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 5rem;
-}
-img[alt="google-map"]{
-
 }
 /*media queries*/
 @media (min-width: 992px) and (max-width: 1200px){
   .start{
     width: 32vw;
     height: 60vh;
+
   }
 .start-desktop{
   display: block;
@@ -184,7 +153,9 @@ img[alt="google-map"]{
 .start-mobile{
   display: none;
 }
-
+.container-second{
+  width: 100%;
+}
 .desktop{
   display: block;
 }
@@ -198,17 +169,14 @@ img[alt="google-map"]{
 .downloand{
 text-align: justify;
 width: 40%;
+
+
+
 }
 .phone{
   width: 40%;
 }
-/*posicionando la seccion descarga a la izquierda*/
-.second-section{
-margin-left: -60px;
+.new-app{
+overflow: auto;
 }
-.map{
-  margin-top: 3rem;
-}
-/**/
-
 }

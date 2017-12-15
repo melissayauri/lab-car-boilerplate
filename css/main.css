@@ -150,7 +150,7 @@ justify-content: flex-end;*/
   margin-left: 1rem;
 }
 /*cambiando el color gris del placeholder*/
-.form-group input::-webkit-input-placeholder{
+.tarifa .form-group input::-webkit-input-placeholder{
   color: white;
 }
 /*modificando el sentido del segundo icono*/
@@ -273,4 +273,42 @@ flex-direction: column;
 }
 /**/
 
+}
+
+/*ejecucion de modales*/
+.content-sesion{
+  background-color: #08ac9d;
+  border-radius: 0;
+}
+.start-sesion{
+  background-color: #f5f5f5;
+  width: 50%;
+  border-radius: 1rem;
+  padding: 2rem;
+
+}
+.input-sesion{
+  /*outline: 1px solid red;*/
+margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+}
+.start-sesion .form-group span{
+  border: none;
+}
+.start-sesion .input-group .input-text{
+  background: none;
+  margin-left: 0rem;
+  border: none;
+  padding: 0px;
+  padding-left: 1rem;
+  border-left: 1px solid #ccc;
+}
+.text-forgot{
+  color:black;
+  padding-top:  2rem;
+}
+.text-forgot a{
+  color: red;
 }

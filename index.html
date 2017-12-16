@@ -215,9 +215,9 @@
 
       <!--tercera sección-conduce-->
       <section class="second-background">
-        <div class="container-fluid container2">
+        <div class="container container2">
           <div class="row">
-            <div class="col-xs-12 col-md-6 col-md-offset-6">
+            <div class="col-xs-12 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6 space">
               <!--contenedor del texto-->
               <div class="third-section">
                 <h1>Conduce cuando quieras</h1>
@@ -235,7 +235,7 @@
                       <!--botón cerrar-->
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       <form>
-                        <div class="form-group">
+                        <div class="form-group contenedor-form">
                           <!--etiqueta puertas-->
                           <label >¿Tienes vehículo de 4 puertas?</label>
                           <!--botón de opción-->
@@ -301,9 +301,9 @@
                             </ul>
                           </div>
                         <!--texto adicional-->
-                        <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                        <p><span>La información de la matrícula ayuda a los clientes a identificar tu vehículo</span></p>
                         <!--boton enviar-->
-                        <button type="button" class="btn btn-info ">Enviar</button>
+                        <button type="button" class="btn btn-info btn-send">Enviar</button>
                       </div>
                     </form>
                   </div>
@@ -315,34 +315,45 @@
         </div>
       </div>
     </section>
-    <!--cuarta sección-->
+
+    <!--cuarta sección-tarifa-->
     <section class="section-orange">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 col-md-6 col-md-offset-1 col-lg-7 col-lg-offset-1">
             <!--sección tarifa-->
-
             <div class="tarifa">
               <h1>Tarifa</h1>
               <p >Consulta las tarifas LabCar aqui</p>
               <!--formulario-->
-              <form>
+              <form >
                 <div class="form-group formul">
-                  <label for="dd" class="glyphicon glyphicon-record"></label>
-                  <input type="text" class="form-control"  placeholder="Insurgentes centro,Cuauhtemoc, ciudad de mexico">
+                  <!--primer icono-->
+                  <label for="dd" class="glyphicon glyphicon-record "></label>
+                  <!--entrada para mobile-->
+                  <input type="text" class="form-control visible-xs"  placeholder="Insurgentes centro,Cuauhtemoc, ciudad de mexico">
+                  <!--entrada para desktop-punto de partida-->
+                  <input type="text" class="form-control visible-md visible-lg"  placeholder="Ingrese su punto de partda">
                 </div>
                 <div class="form-group formul">
+                  <!--segundo icono-->
                   <label for="dd" class="glyphicon glyphicon-send icon"></label>
-                  <input type="text" class="form-control"  placeholder="Insurgentes,">
+                  <!--entrada para mobile-->
+                  <input type="text" class="form-control visible-xs"  placeholder="Insurgentes,">
+                  <!--entrada para desktop-destino-->
+                  <input type="text" class="form-control visible-md visible-lg"  placeholder="Ingrese su destino">
                 </div>
+                <!--trazar ruta-->
                 <button type="button" name="button" class="btn btn-default btn-lg center-block btn-white btn-ruta">¡Trazar ruta!</button>
               </form>
             </div>
           </div>
-
           <div class="col-xs-12 col-md-4 col-lg-4">
-            <figure class="map line">
+            <!--seccion de la imagen del mapa-->
+            <figure class="map ">
+              <!--figura para mobile-->
               <img src="assets/images/mapa.JPG" alt="google-map" class="visible-md visible-lg">
+              <!--figura para desktop-->
               <img src="assets/images/google-map.JPG" alt="google-map" class="visible-xs">
             </figure>
           </div>
@@ -350,33 +361,31 @@
       </div>
     </section>
 
+    <!--sección pie de página-->
     <footer>
       <div class="container">
+        <!--primera fila con el logo labcar-->
         <div class="row">
-          <div class="col-xs-12 footer-title">
+          <div class="col-xs-12 ">
             <img src="assets/images/logoBlanco.png" alt="lab">
             <hr>
           </div>
         </div>
-
-
+        <!--segunda  fila-->
         <div class="row ">
-          <div class="col-md-3 mjj" >
-            <ul class=" icones visible-md visible-lg line">
+          <div class="col-md-3">
+            <!--iconos visibles en version desktop-->
+            <ul class=" icones visible-md visible-lg ">
                 <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
                 <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
                 <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
                 <li><a href="#" class="fa fa-apple" aria-hidden="true"></a></li>
                 <li><a href="#" class="fa fa-play" aria-hidden="true"></a></li>
               </ul>
-
-        </div>
-
-
-
-
-          <div class="col-xs-6 col-md-3 ">
-            <ul class="list1 line">
+            </div>
+            <!--menú para version desktop y mobile-->
+            <div class="col-xs-6 col-md-3 ">
+              <ul class="list1">
                 <li><a href="#">Viaja</a></li>
                 <li><a href="#">Conduce</a></li>
                 <li><a href="#">Ciudades</a></li>
@@ -387,7 +396,7 @@
                 <li><a href="#">Seguridad</a></li>
               </ul>
             </div>
-
+            <!--menú para version mobile-->
             <div class="col-md-3 ">
               <ul class="list1 visible-md visible-lg">
                   <li><a href="#">Oportunidades</a></li>
@@ -400,14 +409,16 @@
                   <li><a href="#">Coder</a></li>
                 </ul>
               </div>
-            <div class="col-xs-6 col-md-3" >
-              <ul class="footer-icons visible-xs">
+              <!--iconos para version mobile-->
+              <div class="col-xs-6 col-md-3" >
+                <ul class="footer-icons visible-xs">
                   <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
                   <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
                   <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
                   <li><a href="#" class="fa fa-apple" aria-hidden="true"></a></li>
                   <li><a href="#" class="fa fa-play" aria-hidden="true"></a></li>
                 </ul>
+                <!--seccion figura-app store y google play-->
                 <div class="footer-img">
                   <figure>
                     <img src="assets/images/enBadgeWebGeneric.png" alt="">
@@ -417,15 +428,14 @@
                   </figure>
                 </div>
               </div>
-      </div>
-
-      <div class="">
-        <hr>
-        <p>© 2017 LabCar technologies Inc.</p>
-      </div>
-    </div>
-
-    </footer>
+            </div>
+            <div>
+              <hr>
+              <!--texto final en el pie de página-->
+              <p>© 2017 LabCar technologies Inc.</p>
+            </div>
+          </div>
+        </footer>
 
 
 

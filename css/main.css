@@ -1,5 +1,6 @@
 *{
   color: white;
+
 }
 
 /*estilos generales*/
@@ -57,7 +58,7 @@ img[alt="logo-blanco"]{
 /*incorporando lineas laterales al texto*/
 .text{
   text-align: center;
-  width: 80%;
+  width: 90%;
 }
 /*línea lateral despues*/
 .text:after {
@@ -66,13 +67,13 @@ img[alt="logo-blanco"]{
   /*se posiciona al lado de la estrella*/
   display: inline-block;
   /*tamaño de la linea*/
-  width: 80px;
+  width: 90px;
   height: 1px;
   /*color de fondo*/
   background: white;
   /*posicionamiento al medio de la estrella*/
   margin-top: 20px;
-  margin-left: 5rem;
+  margin-left: 6rem;
 }
 /*línea lateral antes del texto*/
 .text:before {
@@ -81,26 +82,28 @@ img[alt="logo-blanco"]{
   /*se posiciona al lado de la estrella*/
   display: inline-block;
   /*tamaño de la linea*/
-  width: 80px;
+  width: 90px;
   height: 1px;
   /*color de fondo*/
   background: white;
   /*posicionamiento al medio de la estrella*/
   margin-top: 20px;
-  margin-right: 5rem;
+  margin-right:6rem;
 }
-/*boton descargar*/
+/*boton blanco*/
 .btn-white{
   color:#48454c;
+  /*borde circular*/
   border-radius: 10px;
   background-color: #ffffff;
+  /*espaciado*/
   margin-top: 1rem;
   padding: 1rem;
   font-weight: bold;
 }
 
 
-/*segunda seccion-la nueva app*/
+/*segunda sección-la nueva app*/
 .section-orange{
   background-color:  #f7b617;
   color: white;
@@ -131,7 +134,9 @@ img[alt="logo-blanco"]{
   margin-top: 1rem;
 }
 
+/*Cuarta sección-tarifa */
 .third-section{
+  /*aplicando sombreado*/
   background-color:rgba(52, 52, 52, 0.45);
   height: 100vh;
   padding-left: 3rem;
@@ -144,16 +149,18 @@ img[alt="logo-blanco"]{
   /*outline: 1px solid red;*/
   padding-top: 2rem;
 }
+.formul{
+  display: flex;
+}
 
 /*cambiando estilos a los inputs del formulario*/
-.tarifa .form-group input[type="text"]{
-  display: inline-block;
+.tarifa .formul input{
   width: 50%;
   background-color: #f7b617;
   color: #fff;
   border: 2px solid white;
   border-radius: 5px;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 /*cambiando el color gris del placeholder*/
 .tarifa .form-group input::-webkit-input-placeholder{
@@ -161,12 +168,11 @@ img[alt="logo-blanco"]{
 }
 /*modificando el sentido del segundo icono*/
 .icon{
-  transform:rotate(70deg);
+  transform:rotateZ(80deg);
+  margin-right: 1rem;
+  margin-left: -1rem;
 }
-
-.line{
-/*outline: 1px solid red;*/
-}
+/*seccion del mapa*/
 .map{
   margin-top: 5rem;
   border: 1px solid white;
@@ -174,120 +180,132 @@ img[alt="logo-blanco"]{
   padding: 1rem;
   margin-bottom: 5rem;
 }
-.line{
-  outline: 1px solid red;
-}
+
+/*seccion pie de página*/
 footer{
   background-color: #2b2b2b;
-
 }
-.footer-title{
-  margin-left: 1rem;
-}
+/*titulo del footer-labcar*/
 img[alt="lab"]{
   margin-top: 2rem;
-
+  margin-left: 1rem;
 }
-
+/*eliminado estilos por defecto de la lista*/
 ul{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
+/*modificando el estilo*/
 a{
   text-decoration: none;
   color: white;
 }
+/*estilos para la lista que comienza en viaja*/
 .list1{
   margin-left: 1rem;
+  /*espaciado entre cada elemento*/
   line-height: 2.5;
 }
+/*iconos en la version mobile*/
 .footer-icons{
   margin-bottom: 4rem;
   font-size:1em;
 }
-
+/*posicionado los iconos en una misma linea*/
 .footer-icons li{
   padding-right: 1rem;
   display: inline-block;
 }
-
+/*seccion de imagenes en el footer*/
 .footer-img figure{
+  /*espaciado inferior*/
   margin-bottom: 2rem;
 }
 
 
 
 /*media queries*/
-/*modificaciones */
+/*modificaciones para desktop small*/
 @media (min-width: 992px){
+  /*primera seccion-disfruta el viaje*/
   .start{
-    height: 80vh;
+    /*modificando ancho */
+    height: 85vh;
     width: 41vw;
   }
-
-.flex{
-  display: flex;
-  justify-content: space-around;
+  /*segunda seccion-new app*/
+  .flex{
+    /*los elementos se posicionan con un espaciado entre ellos */
+    display: flex;
+    justify-content: space-around;
+  }
+  /*seccion descarga*/
+  .downloand{
+    text-align: justify;
+    width: 40%;
+  }
+  /*modificando la imagen phone*/
+  .phone{
+    width: 40%;
+  }
+  /*posicionando la seccion descarga a la izquierda, borde izquierdo no se ve*/
+  .second-section{
+    margin-left: -60px;
+  }
+  /*eliminado espacio derecho en la seccion conduce*/
+  .space{
+    padding-right: 0;
+  }
+  /*cuarta seccion-tarifa*/
+  .map{
+    margin-top: 3rem;
+  }
+  /*modificando ubicación del boton ruta*/
+  .btn-ruta{
+    margin-left: 7rem;
+  }
+  /*iconos en version desktop*/
+  .icones li {
+    /*posicionado en la parte inferior*/
+    position: relative;
+    top:25rem;
+    display: inline-block;
+  }
+  /*seccion de imagenes en el footer*/
+  .footer-img{
+    height: 70vh;
+    /*posicionando en columnas y al final*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  /*margen izquierdo al contenedor en el modal conviertete en conductor*/
+  .contenedor-form{
+    margin-left: 3rem;
+  }
 }
-.downloand{
-text-align: justify;
-width: 40%;
-}
-.phone{
-  width: 40%;
-}
-/*posicionando la seccion descarga a la izquierda*/
-.second-section{
-margin-left: -60px;
-}
-.map{
-  margin-top: 3rem;
-}
-.btn-ruta{
-  margin-left: 7rem;
-}
-footer .icones{
 
-outline: 1px solid red;
-  height: 70vh;
-}
-.icones li {
-  position: relative;
-  top:25rem;
-
-display: inline-block;
-outline: 1px solid red;
-
-}
-
-
-.footer-img{
-  outline: 1px solid red;
-height: 70vh;
-display: flex;
-flex-direction: column;
-
-  justify-content: flex-end;
-}
-/**/
-
-}
-
-
+/*modificaciones para desktop large*/
 @media (min-width:1200px){
+  /*modificando el bloque disfruta el viaje*/
   .start{
-    outline: 1px solid red;
-    width: 41vw;
+
+    padding-left: 5rem;
+    height: 75vh;
   }
+  /*modificando el texto con lineas laterales de la primera sección*/
   .text{
-  width: 65%;
+    width: 75%;
   }
+  /*modificando la sección descarga a la izquierda*/
+  .second-section{
+    margin-left: -100px;
+  }
+  /*bloque de los mapas */
   .map{
     width: 80%;
   }
-
 }
 
 
@@ -381,13 +399,18 @@ flex-direction: column;
   width:37vw;
   text-align: left;
 }
-.content-register form p:nth-last-child{
+.content-register form p span{
   color:black;
+  display: block;
+  width:37vw;
 }
-/*estilo para el parrafo en la etiqueta marca*/
+/*estilo para el parrafo debajo de la etiqueta marca*/
 .content-register form p{
   color:gray;
 }
 .content-register form p a{
   color: #6797a9;
+}
+.btn-send{
+  width: 37vw;
 }

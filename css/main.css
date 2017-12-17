@@ -4,10 +4,6 @@
 }
 
 /*estilos generales*/
-.desktop{
-  display: none;
-}
-
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -18,6 +14,7 @@
   /*posicionandolo al lado izquierdo*/
   float: left;
 }
+/*eliminando margen al nav del encabezado */
 .principal{
   margin: 0;
 }
@@ -280,10 +277,6 @@ a{
     flex-direction: column;
     justify-content: flex-end;
   }
-  /*margen izquierdo al contenedor en el modal conviertete en conductor*/
-  .contenedor-form{
-    margin-left: 3rem;
-  }
 }
 
 /*modificaciones para desktop large*/
@@ -389,20 +382,20 @@ a{
 
 /*modal convertir en conductor*/
 /*etiquetas para las opciones*/
-.second-background .content-register .modal-body .form-group label{
+.second-background .content-register .modal-body form label{
   display: block;
   color: black;
   margin-top: 2rem;
 }
 /*estilos para las opciones de la etiqueta*/
-.second-background .content-register .modal-body .form-group .dropdown-toggle{
-  width:37vw;
-  text-align: left;
+.second-background .content-register .form-control option{
+color: black;
 }
+
 .content-register form p span{
   color:black;
-  display: block;
-  width:37vw;
+
+
 }
 /*estilo para el parrafo debajo de la etiqueta marca*/
 .content-register form p{

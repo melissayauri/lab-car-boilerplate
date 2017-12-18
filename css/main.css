@@ -172,7 +172,7 @@ img[alt="logo-blanco"]{
 /*seccion del mapa*/
 .map{
   margin-top: 5rem;
-  border: 1px solid white;
+/*  border: 1px solid white;*/
   width: 100%;
   padding: 1rem;
   margin-bottom: 5rem;
@@ -336,9 +336,7 @@ a{
   color:black;
   padding-top:  2rem;
 }
-.text-forgot a{
-  color: red;
-}
+
 
 /*modal registrate*/
 /*contenedor de la seccion registrate*/
@@ -394,16 +392,8 @@ color: black;
 
 .content-register form p span{
   color:black;
+}
 
-
-}
-/*estilo para el parrafo debajo de la etiqueta marca*/
-.content-register form p{
-  color:gray;
-}
-.content-register form p a{
-  color: #6797a9;
-}
 .btn-send{
   width: 37vw;
 }

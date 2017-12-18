@@ -72,12 +72,13 @@
                     </div>
                     <!--boton login-->
                     <button class="btn btn-default center-block btn-warning " type="submit">Login</button>
-                    <div class="text-forgot">Forgot password?<a href="#" class="">Click here</a></div>
+                    <div class="text-forgot">Forgot password?<a href="#" class="text-danger">Click here</a></div>
                   </form>
                 </div>
               </div>
             </div>
           </div>
+          <!--termino del modal-->
         </div>
       </nav>
     </header>
@@ -155,8 +156,7 @@
                           </div>
                           <!--botón como te enteraste de nosotros despegable-->
                           <div class="btn-group ">
-                            <button type="button" class="btn  dropdown-toggle btn-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Como te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down"></span>
-                            </button>
+                            <button type="button" class="btn  dropdown-toggle btn-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Como te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down"></span></button>
                             <!--menú despegable del botón-->
                             <ul class="dropdown-menu">
                               <li><a href="#">Facebook</a></li>
@@ -251,9 +251,9 @@
                           <option>Ferrari</option>
                         </select>
                         <!--texto adicional-->
-                        <p>¿No ves tu correo en la lista?Envia un correo electronico a <a>sociosmdv@uver.com</a></p>
+                        <p class="text-muted">¿No ves tu correo en la lista?Envia un correo electronico a <a class="text-info">sociosmdv@uver.com</a></p>
                         <!--etiqueta modelo-->
-                        <label >Moelo</label>
+                        <label >Modelo</label>
                         <!--botón de opción-->
                         <select class="form-control">
                           <option>Modelo1</option>
@@ -328,7 +328,7 @@
             <!--seccion de la imagen del mapa-->
             <figure class="map ">
               <!--figura para mobile-->
-              <img src="assets/images/mapa.JPG" alt="google-map" class="visible-md visible-lg">
+              <img src="assets/images/mapa.JPG" alt="google-map" class="visible-md visible-lg img-thumbnail">
               <!--figura para desktop-->
               <img src="assets/images/google-map.JPG" alt="google-map" class="visible-xs">
             </figure>
@@ -412,19 +412,10 @@
             </div>
           </div>
         </footer>
-
-
-
-
-
-
-
-
-
-    <!--vinculando con el archivo jquery-->
-    <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
-    <!--vinculando con el framework bootstrap-js-->
-    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
-</html>
+        <!--vinculando con el archivo jquery-->
+        <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+        <!--vinculando con el framework bootstrap-js-->
+        <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+      </body>
+    </html>
